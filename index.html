@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pac_man</title>
+    <style>
+        body,
+        html{
+            font-family: 'Press Start 2P', cursive;
+
+        }
+        .grid{
+            height: 560px;
+            width: 560px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid div{
+            width: 20px;
+            height: 20px;
+        }
+        .pac_dot{
+            background-color:  rgb(210, 210, 48);
+            border: 7px solid #ffffff;
+            box-sizing: border-box;
+        }
+        .boad{
+            border: 2px solid blue;
+        }
+        .wall{
+            background: black;
+        }
+        .power_pellet{
+            background-color: rgb(0, 255, 8);
+            border-radius: 10px;
+        }
+        .pac_man_left{
+            background-image: url(./img/pac.png);
+            background-color: #0ff140;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;  
+        }
+       .pac_man{
+             background-image: url(./img/pac1.png);
+            background-color: #ffffff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* rotate: 90deg; down */
+            /* rotate: 270deg; up */
+            /* rotate: 360 right */
+            /* rotate: 180deg; */
+            border: 0px;        }
+        .first{
+            background-image: url(./img/red.png);
+            background-color: #ffffff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+        }
+        .second{
+            background-image: url(./img/pink.png);
+            background-color: #ffffff;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+        }.third{
+            background-image: url(./img/yellow.png);
+            background-color: #ffffff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+        }.forth{
+            background-image: url(./img/blue.png);
+            background-color: #ffffff;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+        }
+        .scared_ghost{
+            background-image: url(./img/scared.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+        }
+        .gameresult{
+            color: red;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+        .play{
+            color: red;
+            width: max-content;
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Score: <span id="score">0</span></h3>
+    <div class="grid"></div>
+    <h1 class="gameresult"></h1>
+    <h2 class="play" id="startbutton"></h2>
+    <div class="alan-btn"></div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
